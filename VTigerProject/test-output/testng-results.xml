@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Before Suite Started]]>
     </line>
     <line>
       <![CDATA[Before Class Started]]>
-    </line>
-    <line>
-      <![CDATA[Before Method Started]]>
-    </line>
-    <line>
-      <![CDATA[SimpleTestCase_Test show1_Test method]]>
-    </line>
-    <line>
-      <![CDATA[After Method Started]]>
-    </line>
-    <line>
-      <![CDATA[Before Method Started]]>
-    </line>
-    <line>
-      <![CDATA[SimpleTestCase_Test show2_Test method]]>
-    </line>
-    <line>
-      <![CDATA[After Method Started]]>
     </line>
     <line>
       <![CDATA[Before Method Started]]>
@@ -38,106 +20,73 @@
       <![CDATA[After Class Started]]>
     </line>
     <line>
+      <![CDATA[Before Class Started]]>
+    </line>
+    <line>
+      <![CDATA[Before Method Started]]>
+    </line>
+    <line>
+      <![CDATA[creatingOrg_Test method of TC01_CreateOrganization_Test class]]>
+    </line>
+    <line>
+      <![CDATA[After Method Started]]>
+    </line>
+    <line>
       <![CDATA[After Suite Started]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-09-30T11:06:32 IST" name="Default suite" finished-at="2024-09-30T11:07:01 IST" duration-ms="28304">
+  <suite started-at="2024-11-14T13:31:16 IST" name="SmokeSuite" finished-at="2024-11-14T13:31:39 IST" duration-ms="23272">
     <groups>
-      <group name="Regression">
-        <method signature="SimpleTestCase_Test.show1_Test()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" name="show1_Test" class="testCases.SimpleTestCase_Test"/>
-        <method signature="SimpleTestCase_Test.show2_Test()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" name="show2_Test" class="testCases.SimpleTestCase_Test"/>
-      </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="SimpleTestCase_Test.show_Test()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" name="show_Test" class="testCases.SimpleTestCase_Test"/>
+        <method signature="SimpleTestCase_Test.show_Test()[pri:0, instance:testCases.SimpleTestCase_Test@43df23d3]" name="show_Test" class="testCases.SimpleTestCase_Test"/>
+        <method signature="TC01_CreateOrganization_Test.creatingOrg_Test()[pri:0, instance:testCases.TC01_CreateOrganization_Test@7ae0a9ec]" name="creatingOrg_Test" class="testCases.TC01_CreateOrganization_Test"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-09-30T11:06:32 IST" name="Default test" finished-at="2024-09-30T11:07:01 IST" duration-ms="28304">
+    <test started-at="2024-11-14T13:31:16 IST" name="Test" finished-at="2024-11-14T13:31:39 IST" duration-ms="23272">
       <class name="testCases.SimpleTestCase_Test">
-        <test-method is-config="true" signature="itsBeforeSuite()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:06:32 IST" name="itsBeforeSuite" finished-at="2024-09-30T11:06:32 IST" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="itsBeforeSuite()[pri:0, instance:testCases.SimpleTestCase_Test@43df23d3]" started-at="2024-11-14T13:31:16 IST" name="itsBeforeSuite" finished-at="2024-11-14T13:31:16 IST" duration-ms="8" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Before Suite Started]]>
             </line>
           </reporter-output>
         </test-method> <!-- itsBeforeSuite -->
-        <test-method is-config="true" signature="itsBeforeClass()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:06:32 IST" name="itsBeforeClass" finished-at="2024-09-30T11:06:33 IST" duration-ms="562" status="PASS">
+        <test-method is-config="true" signature="itsBeforeClass()[pri:0, instance:testCases.SimpleTestCase_Test@43df23d3]" started-at="2024-11-14T13:31:16 IST" name="itsBeforeClass" finished-at="2024-11-14T13:31:16 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Before Class Started]]>
             </line>
           </reporter-output>
         </test-method> <!-- itsBeforeClass -->
-        <test-method is-config="true" signature="itsBeforeMethod()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:06:33 IST" name="itsBeforeMethod" finished-at="2024-09-30T11:06:43 IST" duration-ms="9773" status="PASS">
+        <test-method is-config="true" signature="itsBeforeMethod()[pri:0, instance:testCases.SimpleTestCase_Test@43df23d3]" started-at="2024-11-14T13:31:16 IST" name="itsBeforeMethod" finished-at="2024-11-14T13:31:19 IST" duration-ms="3727" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Before Method Started]]>
             </line>
           </reporter-output>
         </test-method> <!-- itsBeforeMethod -->
-        <test-method signature="show1_Test()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:06:43 IST" name="show1_Test" finished-at="2024-09-30T11:06:43 IST" duration-ms="25" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[SimpleTestCase_Test show1_Test method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- show1_Test -->
-        <test-method is-config="true" signature="itsAfterMethod()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:06:43 IST" name="itsAfterMethod" finished-at="2024-09-30T11:06:43 IST" duration-ms="125" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[After Method Started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- itsAfterMethod -->
-        <test-method is-config="true" signature="itsBeforeMethod()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:06:43 IST" name="itsBeforeMethod" finished-at="2024-09-30T11:06:51 IST" duration-ms="8397" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Before Method Started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- itsBeforeMethod -->
-        <test-method signature="show2_Test()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:06:51 IST" name="show2_Test" finished-at="2024-09-30T11:06:51 IST" duration-ms="17" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[SimpleTestCase_Test show2_Test method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- show2_Test -->
-        <test-method is-config="true" signature="itsAfterMethod()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:06:51 IST" name="itsAfterMethod" finished-at="2024-09-30T11:06:51 IST" duration-ms="120" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[After Method Started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- itsAfterMethod -->
-        <test-method is-config="true" signature="itsBeforeMethod()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:06:51 IST" name="itsBeforeMethod" finished-at="2024-09-30T11:07:00 IST" duration-ms="8627" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Before Method Started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- itsBeforeMethod -->
-        <test-method signature="show_Test()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:07:00 IST" name="show_Test" finished-at="2024-09-30T11:07:00 IST" duration-ms="0" status="PASS">
+        <test-method signature="show_Test()[pri:0, instance:testCases.SimpleTestCase_Test@43df23d3]" started-at="2024-11-14T13:31:19 IST" name="show_Test" finished-at="2024-11-14T13:31:20 IST" duration-ms="29" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[SimpleTestCase_Test show_Test method]]>
             </line>
           </reporter-output>
         </test-method> <!-- show_Test -->
-        <test-method is-config="true" signature="itsAfterMethod()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:07:00 IST" name="itsAfterMethod" finished-at="2024-09-30T11:07:00 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="itsAfterMethod()[pri:0, instance:testCases.SimpleTestCase_Test@43df23d3]" started-at="2024-11-14T13:31:20 IST" name="itsAfterMethod" finished-at="2024-11-14T13:31:22 IST" duration-ms="2121" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[After Method Started]]>
             </line>
           </reporter-output>
         </test-method> <!-- itsAfterMethod -->
-        <test-method is-config="true" signature="itsAfterClass()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:07:00 IST" name="itsAfterClass" finished-at="2024-09-30T11:07:01 IST" duration-ms="441" status="PASS">
+        <test-method is-config="true" signature="itsAfterClass()[pri:0, instance:testCases.SimpleTestCase_Test@43df23d3]" started-at="2024-11-14T13:31:22 IST" name="itsAfterClass" finished-at="2024-11-14T13:31:22 IST" duration-ms="131" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[After Class Started]]>
             </line>
           </reporter-output>
         </test-method> <!-- itsAfterClass -->
-        <test-method is-config="true" signature="itsAfterSuite()[pri:0, instance:testCases.SimpleTestCase_Test@69e153c5]" started-at="2024-09-30T11:07:01 IST" name="itsAfterSuite" finished-at="2024-09-30T11:07:01 IST" duration-ms="870" status="PASS">
+        <test-method is-config="true" signature="itsAfterSuite()[pri:0, instance:testCases.SimpleTestCase_Test@43df23d3]" started-at="2024-11-14T13:31:39 IST" name="itsAfterSuite" finished-at="2024-11-14T13:31:39 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[After Suite Started]]>
@@ -145,6 +94,111 @@
           </reporter-output>
         </test-method> <!-- itsAfterSuite -->
       </class> <!-- testCases.SimpleTestCase_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testCases.TC01_CreateOrganization_Test">
+        <test-method is-config="true" signature="itsBeforeClass()[pri:0, instance:testCases.TC01_CreateOrganization_Test@7ae0a9ec]" started-at="2024-11-14T13:31:22 IST" name="itsBeforeClass" finished-at="2024-11-14T13:31:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Before Class Started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- itsBeforeClass -->
+        <test-method is-config="true" signature="itsBeforeMethod()[pri:0, instance:testCases.TC01_CreateOrganization_Test@7ae0a9ec]" started-at="2024-11-14T13:31:22 IST" name="itsBeforeMethod" finished-at="2024-11-14T13:31:25 IST" duration-ms="3265" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Before Method Started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- itsBeforeMethod -->
+        <test-method signature="creatingOrg_Test()[pri:0, instance:testCases.TC01_CreateOrganization_Test@7ae0a9ec]" started-at="2024-11-14T13:31:25 IST" name="creatingOrg_Test" finished-at="2024-11-14T13:31:29 IST" duration-ms="3569" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[creatingOrg_Test method of TC01_CreateOrganization_Test class]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- creatingOrg_Test -->
+        <test-method is-config="true" signature="itsAfterMethod()[pri:0, instance:testCases.TC01_CreateOrganization_Test@7ae0a9ec]" started-at="2024-11-14T13:31:29 IST" name="itsAfterMethod" finished-at="2024-11-14T13:31:39 IST" duration-ms="10253" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c441af8f55b75c3f23f0baf2bd1c251, findElement {using=link text, value=Sign Out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57980/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c441af8f55b75c3f23f0baf2bd1c251]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c441af8f55b75c3f23f0baf2bd1c251, findElement {using=link text, value=Sign Out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57980/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c441af8f55b75c3f23f0baf2bd1c251
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at baseUtility.BaseTest.itsAfterMethod(BaseTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[After Method Started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- itsAfterMethod -->
+        <test-method is-config="true" signature="itsAfterClass()[pri:0, instance:testCases.TC01_CreateOrganization_Test@7ae0a9ec]" started-at="2024-11-14T13:31:39 IST" name="itsAfterClass" finished-at="2024-11-14T13:31:39 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itsAfterClass -->
+      </class> <!-- testCases.TC01_CreateOrganization_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- SmokeSuite -->
 </testng-results>

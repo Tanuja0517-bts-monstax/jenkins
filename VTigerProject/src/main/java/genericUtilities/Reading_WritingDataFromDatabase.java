@@ -10,10 +10,11 @@ import com.mysql.cj.jdbc.Driver;
 
 public class Reading_WritingDataFromDatabase {
 	Connection con;
-	public void getConnection(String url, String username,String pwd) throws SQLException {
+	public void getConnection(String url, String username,String pwd) throws SQLException, Exception {
 		Driver d=new Driver();
 		DriverManager.registerDriver(d);
 		
+		//Class.forName("com.mysql.cj.jdbc.Driver");
 		con= DriverManager.getConnection(url, username, pwd);
 	}
 	

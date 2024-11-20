@@ -5,7 +5,9 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -23,29 +25,17 @@ import genericUtilities.ReadingDataFromPropertiesFile;
 
 public class BaseTest {
 	public WebDriver driver=null;
-	public ExtentSparkReporter esreport=null;
-	public ExtentReports ereport=null;
-	public ExtentTest test=null;
-	public JavaUtility ju=new JavaUtility();
+	public static WebDriver sdriver=null;
 	public ReadingDataFromPropertiesFile read=new ReadingDataFromPropertiesFile();
 	
 	@BeforeSuite(groups = {"Smoke","Regression"})
 	public void itsBeforeSuite() {
 		Reporter.log("Before Suite Started",true);
-		String date=ju.getSystemDate();
-		date.replace(':', '_').replace(' ', '_');
-		esreport= new ExtentSparkReporter("./advanceReport/Advance_Report_"+date+".html");
-		esreport.config().setDocumentTitle("VTiger Report");
-		esreport.config().setReportName("AdbanceReport"+ju.generateRandomNumber());
 	}
 	
 	@BeforeClass(groups = {"Smoke","Regression"})
 	public void itsBeforeClass() {
 		Reporter.log("Before Class Started",true);
-		ereport= new ExtentReports();
-		ereport.attachReporter(esreport);
-		ereport.setSystemInfo("OS", "Windows");
-		ereport.setSystemInfo("Environment", "Testing");
 	}
 	
 	@BeforeMethod(groups = {"Smoke","Regression"})
@@ -58,17 +48,18 @@ public class BaseTest {
 		driver.findElement(By.name("user_name")).sendKeys(read.readDataFromFile("user1"));
 		driver.findElement(By.name("user_password")).sendKeys(read.readDataFromFile("pwd1"));
 		driver.findElement(By.id("submitButton")).click();
+		sdriver=driver;
 	}
 	
 	@AfterMethod(groups = {"Smoke","Regression"})
-	public void itsAfterMethod() {
+	public void itsAfterMethod() throws InterruptedException {
 		Reporter.log("After Method Started",true);
-		try {
-			driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']")).click();
-		}
-		catch(StaleElementReferenceException e) {
-			driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']")).click();
-		}
+		WebElement ele=driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
+		Actions act=new Actions(driver);
+		act.moveToElement(ele).perform();
+		Thread.sleep(30);
+		driver.findElement(By.linkText("Sign Out")).click();
+		
 	}
 	
 	@AfterClass(groups = {"Smoke","Regression"})
@@ -80,6 +71,5 @@ public class BaseTest {
 	@AfterSuite(groups = {"Smoke","Regression"})
 	public void itsAfterSuite() {
 		Reporter.log("After Suite Started",true);
-		ereport.flush();
 	}
 }

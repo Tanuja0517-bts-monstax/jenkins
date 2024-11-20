@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tpass.KalkiFashions_Test">
+      <class name="testCases.TC01_CreateOrganization_Test">
         <methods>
-          <include name="addingProductToCart_Test"/>
+          <include name="itsBeforeClass"/>
+          <include name="itsAfterClass"/>
+          <include name="itsBeforeMethod"/>
+          <include name="itsAfterMethod"/>
+          <include name="itsAfterSuite"/>
+          <include name="creatingOrg_Test"/>
+          <include name="itsBeforeSuite"/>
         </methods>
-      </class> <!-- tpass.KalkiFashions_Test -->
+      </class> <!-- testCases.TC01_CreateOrganization_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

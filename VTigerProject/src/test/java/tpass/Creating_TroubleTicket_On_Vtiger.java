@@ -38,7 +38,7 @@ public class Creating_TroubleTicket_On_Vtiger {
 		wb=WorkbookFactory.create(fis);
 		sh=wb.getSheet("Trouble_Ticket");
 		
-		int rowCount=sh.getPhysicalNumberOfRows();
+		int rowCount=sh.getPhysicalNumberOfRows()-1;
 		int colCount=sh.getRow(0).getPhysicalNumberOfCells();
 		
 		Object obj[][]=new Object[rowCount][colCount-1];
